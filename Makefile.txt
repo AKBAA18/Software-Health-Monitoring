@@ -1,0 +1,10 @@
+all :
+  gcc -o deamon deamon.c  
+  gcc -o application application.c
+  gcc -o application_delay application_delay.c
+  gcc -o application_cancel application_cancel.c
+  > log_file.txt
+remove :
+  rm -r deamon application application_delay application_cancel
+
+
